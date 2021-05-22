@@ -20,13 +20,13 @@ time.sleep(2)
 def doneError():
     print(Fore.RESET)
     gui.doneF()
-    exit()
+    sys.exit()
 
 
 def doneEZ():
     print(Fore.RESET)
     gui.done()
-    exit()
+    sys.exit()
 
 
 init()
@@ -77,7 +77,7 @@ print("Replacing jar..")
 firstLine = False
 while True:
     if not gui.isOpen():
-        exit()
+        sys.exit()
     try:
         os.remove(oldmodfile)
 
