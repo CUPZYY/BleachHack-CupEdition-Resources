@@ -1,7 +1,7 @@
 {
-  "version": "1.2.1",
+  "version": "1.3",
   "installer" : {
     "link" : "https://raw.githubusercontent.com/CUPZYY/BleachHack-CupEdition-Resources/main/autoupdate/autoupdate.exe",
-    "url" : "https://github.com/CUPZYY/BleachHack-CupEdition/releases/download/1.2.1/bleachhack_cupedition-1.16.5.jar"
+    "url" : "https://github.com/CUPZYY/BleachHack-CupEdition/releases/download/1.3/bleachhack-cupedition-1.3.jar"
   }
 }
