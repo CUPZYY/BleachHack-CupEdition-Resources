@@ -1,11 +1,14 @@
 import os
+import shutil
+import subprocess
+import threading
 import time
 import uuid
 import zipfile
+
 import requests
-import shutil
 from clint.textui import progress
-import threading
+
 from gui import *
 
 gui = guiClass()
@@ -14,7 +17,6 @@ uplfoadThread = threading.Thread(target=gui.gui)
 uplfoadThread.setDaemon(False)
 uplfoadThread.start()
 time.sleep(2)
-
 
 def doneError():
     gui.doneF()
@@ -69,10 +71,9 @@ if url.endswith(".zip"):
 firstLine = False
 while True:
     if not gui.isOpen():
-        sys.exit()
+        exit()
     try:
         os.remove(oldmodfile)
-
         break
     except Exception as e:
         if not os.path.exists(oldmodfile):
